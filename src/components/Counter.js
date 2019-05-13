@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from 'react-redux';
 import { increment, decrement, incrementByTen } from '../actions';
 
+
 class Counter extends Component {
     incrementIfOdd = () => {
         // Stretch Problem: Implement an increment function that
@@ -25,7 +26,7 @@ class Counter extends Component {
         // should decrement or increment accordingly
         
         return (
-            <p>
+            <p className ='counter'>
                 Clicked: {this.props.count} times
                 
                 <button onClick={() => {this.props.decrement() }}>
